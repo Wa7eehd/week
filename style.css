@@ -1,0 +1,898 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Amiri+Quran&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=El+Messiri:wght@400..700&family=Fustat:wght@200..800&family=Gulzar&family=Noto+Sans+Arabic:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=El+Messiri:wght@400..700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Katibeh&family=Lora:ital,wght@0,400..700;1,400..700&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+Tibetan:wght@100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: "Noto Serif Tibetan", serif;
+    direction: rtl;
+    color:white;
+}
+
+.container{
+  
+    background: linear-gradient(to  left top,rgb(255, 255, 255) , rgb(0, 214, 221) 20%);
+    min-height: 100vh;
+    position:static;
+    top:5px;
+   
+}
+header {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+   z-index: 1;
+   
+}
+header p{
+font-size: 2rem;
+font-weight: bold;
+color:white;
+padding: 10px;
+margin: 10px;
+letter-spacing: 2px;
+
+}
+header ul  li{
+    list-style: none;
+}
+header ul{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    gap: 22px;
+    margin: 10px;
+}
+.icon{
+   display: none;
+}
+.icon #menu{
+    font-size: 40px;
+    color:aqua;
+    background: rgb(0, 98, 128);
+    padding:10px;
+    border-radius: 10px;
+    cursor: pointer;
+ 
+}
+.icon #menu:active{
+scale:.9
+
+}
+header .ul li {
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+header ul li p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+
+}
+header ul li a{
+width: fit-content;
+ padding: .1rem 2.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px; 
+    text-decoration: none;
+    font-size: 1.2rem;
+    background: rgb(0, 98, 128);
+border-radius: 4px;
+transition: .6s ease;
+}
+header ul li a:hover,
+header ul li a.top{
+
+    background: rgb(0, 98, 110);
+scale: .9;
+}
+
+
+header ul li a i{
+    color:rgb(0, 225, 255);
+}
+.ul2 {
+    display: none;
+}
+.container menu{
+
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+    flex-direction: column;
+}
+.container menu h2{
+    font-size: 5.4rem;
+    color: rgb(0, 98, 128);
+  padding: 0;
+  margin: 0;
+    font-weight: 600;
+
+}
+.container menu h4{
+color:  rgb(0, 98, 128);
+letter-spacing: 2px;
+font-size: 1.6rem;
+
+}  
+.container menu h4 span{
+    color: white;
+}
+
+.btn{
+    margin-top: 1rem;
+    padding: .5rem 2rem;
+    cursor:pointer;
+    color: aliceblue;
+    background:rgb(0, 98, 128);
+    border-radius: 3px;
+font-size: 1.6rem;
+    outline: none;
+    border: none;
+    transition: .3s ease;
+}
+.btn:hover{
+
+    transform: translateY(-5px);
+}
+
+/* section 2  */
+.background-1{
+    min-height:100vh;
+    position:static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:5px;
+    flex-wrap:wrap;
+padding: 100px 5% 10px;
+
+    background:linear-gradient( to left ,rgb(255, 253, 253) 56%, rgb(0, 214, 221));  
+}
+
+.h5{
+    overflow: hidden;
+    position: relative;
+}
+h5{
+    background-color: rgb(3, 114, 8);
+    font-size:1.4rem;
+    padding:10px 40px;
+    border-radius: 5px;
+    width:fit-content;
+font-weight: bold;
+transition: transform .8s ease-out , opacity .8s ease-in-out;
+transform: translateX(350px);
+opacity: 0;
+
+}
+/* @keyframes add{
+100%{
+    transform: translateX(0); 
+} 
+
+}
+*/
+.background-1 .text , .background-1 .image{
+       
+    animation: add ease;
+animation-timeline: scroll();
+transition: 1.9s;
+overflow: hidden;
+    opacity: .3;
+    transform: scale(.6) ;
+ 
+}
+
+@keyframes add{
+
+    100%{
+        opacity: 1;
+        transform: scale(1) ;
+    
+    }
+    }
+    
+
+.background-1 .image img{
+width: 100%;
+
+object-fit: cover;
+}
+.background-1 .image{
+    display: flex;
+    flex:4 2;
+}
+.background-1 .text{
+    display: flex;
+    flex:4 2;
+    flex-direction: column;
+    
+}
+
+
+.background-1 .text  h1{
+    font-size: 7rem;
+color: rgb(4, 63, 80);
+  font-family: "Fustat", sans-serif;
+}
+.background-1 .text .icon-p{
+display: flex;
+align-items: center;
+margin: 20px 0;
+font-size: 43px;
+gap: 30px;
+color: rgb(10, 68, 85);
+  font-family: "Fustat", sans-serif;
+}
+.background-1 .text .icon-p i{
+    font-size:63px ;
+color: rgb(0, 98, 128);
+
+}
+.background-1 .text p{   
+    animation: add 3.9s steps(5) ; 
+    Animation-timeline: view ();
+    animation-range: entry 0% cover 90%;
+
+}
+
+
+@media(max-width:1454px) {
+    .background-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap:wrap;
+        flex-direction: column;
+        background:linear-gradient( to left bottom,rgb(255, 255, 255) 20%, rgb(0, 214, 221));
+        gap: 30px;
+    }
+
+    .background-1 .image img{
+    border: 20px solid rgb(0, 98, 110);
+
+    }
+
+
+}
+
+
+footer{
+    background: rgb(0, 98, 128);
+
+    padding: 30px;
+}
+footer menu{
+    display: flex;
+    justify-content: space-around;
+
+}
+footer aside{
+    display: flex;
+    gap: 7px;
+    
+}
+footer aside a{
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    width:2rem;
+    height:2rem;
+    text-align: center;
+font-size: 1.2rem;
+   
+    text-decoration: none;
+}
+footer .div1 a#x{
+color: rgb(255, 255, 255);
+transition: .4s;
+}
+footer .div1 a#x:hover{
+    background-color: rgb(255, 255, 255);
+color:black
+}
+
+footer .div1 a#link{
+    color:rgb(0, 119, 255);
+
+    transition: .4s;
+    }
+    footer .div1 a#link:hover{
+        background-color:rgb(0, 119, 255);
+    color:rgb(255, 255, 255)
+    }
+    footer menu p {
+color: rgb(0, 5, 7)
+}
+.box-form{
+  max-width: 90%;
+  width: 900px;
+text-align: center;
+  margin:  auto;
+ padding: 100px 0 50px;
+
+}
+form  .input input{ 
+width: 100%;
+margin: 10px;
+padding: 14px;
+outline: none;
+font-size: 1.7rem;
+
+display: flex;
+flex-wrap: wrap;
+background: rgb(0, 98, 128) ;
+color: white;
+border: rgb(0, 119, 255) .1px solid;
+}
+form  .input input::placeholder{
+color: rgb(223, 222, 222);
+font-size: 1.1rem;
+
+}
+form button{
+    margin-top: 1rem;
+    padding: .5rem 5rem;
+    cursor:pointer;
+    color: aliceblue;
+    background:rgb(0, 98, 128);
+    border-radius: 3px;
+font-size: 1.7rem;
+    outline: none;
+    border: none;
+    transition: .3s ease;
+}
+form h4{
+    font-size: 2rem;
+}
+
+main{
+
+    padding: 40px;
+    margin:auto 0;
+ 
+  min-height: 100vh;
+  background: linear-gradient(to left top,rgb(255, 255, 255) 60%, rgb(0, 214, 221) 60%);
+
+    }
+  hr{
+ border: .1px solid black;
+  }  
+table{
+width: 100%;
+border-collapse: collapse;
+ text-align: center;
+
+}
+main  center {
+    margin-top: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+main  center p{
+padding: 10px 70px;
+background:  rgb(0, 98, 128);
+width:fit-content;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-radius:  40px 0 40px 0;
+}
+main  center .btnn {
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+main  center .btnn button{
+border-radius: 0 20px 0 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 1.9rem;
+    background: rgb(221, 1, 1);
+    color: white;
+    padding: 10px;
+    transition: .5s ease;
+}
+main  center .btnn button:hover{
+    background: red;
+scale:.9;
+}
+th,td{
+    border: 1px solid rgb(11, 120, 134);
+  
+}
+th{
+    background: rgb(0, 98, 110);
+font-size: 22px;
+font-weight: 900;
+padding: 10px;
+
+}
+td{
+    background:  rgb(0, 98, 128);
+    font-size: 22px;
+padding: 5px;
+font-weight: 700;
+
+}
+.container1{
+
+    background: linear-gradient(to left top,rgb(255, 255, 255), rgb(0, 214, 221) 20%);
+    min-height: 100vh;
+}
+.container2{
+
+    background: linear-gradient(to  top left,rgb(255, 255, 255)28%, rgb(0, 214, 221) 20%);
+}
+
+ footer menu .div2 a{
+    display: block;
+    width: fit-content;
+}
+footer menu .div2 a:hover{
+    color:white
+}
+.Table{
+    width: 100%;
+    overflow-x: scroll;
+
+}
+
+.Table::-webkit-scrollbar{
+    width: 1px;
+}
+
+
+/* for phone width:???   */
+
+
+@media (max-width:1040px){
+header{
+    padding: 20px;
+}
+header .ul {
+display:none;
+
+}
+ .icon{
+display: block;
+}
+.ul2{
+   
+display: none;
+justify-content: center;
+position: absolute;
+background: black;
+top: 0;
+right: 0;
+left: 0;
+bottom: 0;
+height: fit-content;
+text-align: center;
+gap: 20px;
+transition: .9s ease-in-out;
+z-index: 1000;
+}
+.ul2.active{
+display: block;
+
+}
+#x{
+    color: red;
+    font-size: 22px;
+    cursor: pointer;
+}
+.ul2 li {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 50px;margin: 20px 0;
+     list-style:none;
+}
+.ul2 li p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+
+}
+.ul2 li a{
+display: flex;
+text-align: center;
+justify-content: center;
+flex-direction: column;
+text-decoration: none;
+width: 180px;
+padding: 30px 30px;
+background: rgb(0, 98, 110);
+cursor: pointer;
+
+}
+.ul2 li a:hover,
+ .ul2 li a.top{
+
+background: rgb(0, 98, 110);
+scale: .9;
+}
+
+
+.ul2 li a i{
+    color:rgb(0, 225, 255);
+}
+
+
+}
+@media (max-width:930px){
+
+  hr{
+ border: .1px solid black;
+  }  
+table{
+width: 100%;
+overflow-x: scroll;
+
+}
+main  center {
+    margin-top: 2.5rem;
+    position: relative;
+    overflow: hidden;
+
+}
+
+main  center .btnn {
+    position: relative;
+    top: 0;
+    left: 0;
+ 
+}
+main  center .btnn button{
+border-radius: 0 20px 0 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 1.5rem;
+    background: rgb(221, 1, 1);
+    color: white;
+    padding: 10px;
+    transition: .5s ease;
+}
+main  center .btnn button:hover{
+    background: red;
+scale:.9;
+}
+th,td{
+    border: 1px solid rgb(11, 120, 134);
+
+}
+th{
+    background: rgb(0, 98, 110);
+font-size: 19px;
+font-weight: 900;
+padding: 6px;
+
+}
+td{
+    background:  rgb(0, 98, 128);
+    font-size: 19px;
+padding: 5px;
+font-weight: 700;
+
+}
+
+
+
+}
+
+@media  (max-width:782px){
+table{
+    width: 1200px;
+}
+
+th{
+   
+    background: rgb(0, 98, 110);
+font-size: 19px;
+font-weight: 900;
+padding: 17px;
+
+}
+td{
+    background:  rgb(0, 98, 128);
+    font-size: 17px;
+padding: 17px;
+font-weight: 700;
+
+}
+
+
+}
+
+@media (max-width:746px){
+.container menu{
+
+ width: 100%;
+   padding: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+    flex-direction: column;
+}
+.container menu h2{
+    font-size: 4.4rem;
+    color: rgb(0, 98, 128);
+  padding: 0;
+  margin: 0;
+    font-weight: 600;
+
+}
+
+.container menu h4{
+color:  rgb(0, 98, 128);
+letter-spacing: 1px;
+font-size: 1.3rem;
+
+}  
+.container menu h4 span{
+    color: white;
+}
+
+.btn{
+    margin-top: 1rem;
+    padding: .5rem 2rem;
+    cursor:pointer;
+    color: aliceblue;
+    background:rgb(0, 98, 128);
+    border-radius: 3px;
+font-size: 1.9rem;
+    outline: none;
+    border: none;
+    transition: .3s ease;
+}
+
+
+
+}
+
+@media (max-width:649px){
+
+.container menu{
+ width: 100%;
+   padding: 10px;
+  
+}
+.container menu h2{
+    font-size: 3.1rem;
+    color: rgb(0, 98, 128);
+  padding: 0;
+  margin: 0;
+    font-weight: 600;
+
+}
+
+.container menu h4{
+color:  rgb(0, 98, 128);
+letter-spacing: 1px;
+font-size: 1.2rem;
+
+}  
+.container menu h4 span{
+    color: white;
+}
+
+.btn{
+    margin-top: 1rem;
+    padding: .5rem 2rem;
+    cursor:pointer;
+    color: aliceblue;
+    background:rgb(0, 98, 128);
+    border-radius: 3px;
+font-size: 1.5rem;
+    outline: none;
+    border: none;
+    transition: .3s ease;
+}
+.background-1 .text p{
+    font-size: 2.2rem;
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 98, 128);
+   
+    animation: add 3.9s steps(5) ; 
+    Animation-timeline: view ();
+    animation-range: entry 0% cover 90%;
+
+}
+
+}
+@media (max-width:609px){
+table{
+    width: 1200px;
+}
+
+th{
+   
+    background: rgb(0, 98, 110);
+font-size: 19px;
+font-weight: 900;
+padding: 17px;
+
+}
+td{
+    background:  rgb(0, 98, 128);
+    font-size: 17px;
+padding: 17px;
+font-weight: 700;
+
+}
+
+}
+@media (max-width:539px){
+table{
+width: 50%;
+}
+th{
+    background: rgb(0, 98, 110);
+     font-size: 17px;
+
+
+font-weight: 900;
+padding: 3px;
+padding: 30px;
+}
+td{
+    background:  rgb(0, 98, 128);
+    font-size: 17px;
+  padding: 2px;
+
+font-weight: 700;
+
+}
+    
+}
+@media (max-width:435px){
+.container menu{
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+    flex-direction: column;
+}
+    
+.container menu h2{
+
+     font-size: 2.4rem;
+}
+
+.background-1 .text p{
+       font-size: 2rem;
+       font-weight: 800;
+}
+footer menu{
+    display: flex;
+    justify-content: center;
+flex-wrap: wrap;
+gap: 50px;
+}
+
+ footer  p{
+
+    margin-top: 2rem;
+ }
+
+}
+@media (max-width:355px){
+.container menu h2{
+
+     font-size: 2.1rem;
+}
+
+.background-1 .text p{
+       font-size: 1.6rem;
+       font-weight: 800;
+}
+
+.container menu h4{
+color:  rgb(0, 98, 128);
+letter-spacing: 2px;
+font-size: 1.2rem;
+font-weight: 900;
+}  
+
+
+}
+@media (max-width:266px){
+
+    form button{
+    margin-top: 1rem;
+    padding: .3rem 3rem;
+    cursor:pointer;
+    color: aliceblue;
+    background:rgb(0, 98, 128);
+    border-radius: 3px;
+font-size: 1.4rem;
+    outline: none;
+    border: none;
+    transition: .3s ease;
+}
+
+
+
+}
+/* end for phone width:???   */
+
+.form{
+    padding: 100px 0 0 ;
+height: 100vh;
+width: 100%;
+}
+
+.form form{
+    margin: 20px auto;
+    width: 600px;
+    max-width: 90vw;
+   
+}
+
+.form form h1{
+    text-align: center;
+    font-size: 29px;
+}
+.form form .input{
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+      background: rgb(0, 98, 110);
+border-radius: 12px;
+padding: 10px;
+margin: 50px 0;
+}
+
+.form form .input input{
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+.form form .input i{
+font-size:29px;
+color: aqua;
+}
+.form form .rempaner{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 23px;
+flex-wrap: wrap;
+gap: 20px;
+}
+.form form .rempaner .dy input[type="checkbox"]{
+    accent-color: aqua; 
+
+}
+.form form .rempaner a{
+font-size: 19px;
+
+}
+
+.form form .input input[type="date"]{
+    font-size:18px;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
